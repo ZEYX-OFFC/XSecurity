@@ -1,0 +1,11 @@
+{
+  "name": "ovalium-xsecu-vercel-full",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "vercel-build": "npm --prefix server i && npm --prefix server run prisma:generate && npm --prefix server run build && npm --prefix web i && npm --prefix web run build"
+  },
+  "dependencies": {
+    "@vercel/node": "^3.1.7"
+  }
+}
